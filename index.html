@@ -483,8 +483,8 @@ const App = {
         const s = localStorage;
         document.getElementById('apiKeyInput').value = s.getItem(STORAGE.API_KEY) || '';
         document.getElementById('systemRoleInput').value = s.getItem(STORAGE.SYSTEM_ROLE) || `(KØBLLUX · DUΛL · MØDØ UNØ)\nVocê é Dual.Infodose v8.0.\nUse formatação avançada (Markdown, Chips [ ], Listas).`;
-        document.getElementById('inputUserId').value = s.getItem(STORAGE.USER_ID) || 'Viajante';
-        document.getElementById('inputModel').value = s.getItem(STORAGE.MODEL) || 'google/gemini-2.0-flash-exp';
+        document.getElementById('inputUserId').value = s.getItem(STORAGE.USER_ID) || 'Viajante Δ';
+        document.getElementById('inputModel').value = s.getItem(STORAGE.MODEL) || 'tngtech/deepseek-r1t2-chimera:free';
         this.state.isAutoSolar = s.getItem(STORAGE.SOLAR_AUTO) !== 'false';
         if (this.state.isAutoSolar) this.autoByTime(); else this.setMode(s.getItem(STORAGE.SOLAR_MODE) || 'night');
 
